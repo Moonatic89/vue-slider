@@ -43,6 +43,7 @@
 .reel {
     float: left;
     max-width: 20%;
+    background-color: black;
 }
 
 .reel img {
@@ -58,6 +59,7 @@
     top: 0%;
     right: 22%;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .commands>span {
@@ -70,4 +72,16 @@
     vertical-align: middle;
     line-height: 30px;
     text-align: center;
+}
+
+.inactive {
+    opacity: .5;
+}
+
+.reelImg {
+    background-color: black;
+}
+
+.active>img {
+    border: 2px solid lightgray;
 }
