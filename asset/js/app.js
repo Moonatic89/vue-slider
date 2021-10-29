@@ -33,6 +33,21 @@ const app = new Vue(
             ]
         },
         methods: {
-
+            slideUp() {
+                this.counter--;
+                console.log(this.counter)
+                this.counterControl();
+            },
+            slideDown() {
+                this.counter++;
+                this.counterControl();
+            },
+            counterControl() {
+                if (this.counter < 0) {
+                    this.counter = 4;
+                } else if (this.counter > 4) {
+                    this.counter = 0;
+                }
+            }
         }
     })
