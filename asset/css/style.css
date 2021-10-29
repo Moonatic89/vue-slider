@@ -4,6 +4,37 @@
     box-sizing: border-box;
 }
 
+.clearfix {
+    clear: both;
+    display: table;
+    content: "";
+}
+
 .showcase {
-    position: absolute;
+    width: 1500px;
+    height: 1000px;
+    background-color: lightgray;
+}
+
+.preview {
+    float: left;
+}
+
+.preview {
+    width: 80%;
+}
+
+.preview .image>img {
+    width: 100%;
+}
+
+.preview .image {}
+
+.reel {
+    float: left;
+    width: 20%;
+}
+
+.reel img {
+    width: 100%
 }
