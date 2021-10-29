@@ -1,25 +1,38 @@
-/*
-const items = [
-    'img/01.jpg',
-    'img/02.jpg',
-    'img/03.jpg',
-    'img/04.jpg',
-    'img/05.jpg'
-];
+const app = new Vue(
+    {
+        el: "#app",
+        data: {
+            counter: 0,
+            slides: [
+                {
+                    name: "Svezia",
+                    text: "Lorem Ipsum",
+                    image: './asset/img/01.jpg'
 
-const title = [
-    'Svezia',
-    'Svizzera',
-    'Gran Bretagna',
-    'Germania',
-    'Paradise'
-];
+                }, {
+                    name: "Svizzera",
+                    text: "Lorem Ipsum",
+                    image: './asset/img/02.jpg'
 
-const text = [
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.',
-    'Lorem ipsum',
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
-    'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
-];
-*/
+                }, {
+                    name: "Gran Bretagna",
+                    text: "Lorem Ipsum",
+                    image: './asset/img/03.jpg'
+
+                }, {
+                    name: "Germania",
+                    text: "Lorem Ipsum",
+                    image: './asset/img/04.jpg'
+
+                }, {
+                    name: "Paradise",
+                    text: "Lorem Ipsum",
+                    image: './asset/img/05.jpg'
+
+                },
+            ]
+        },
+        methods: {
+
+        }
+    })
