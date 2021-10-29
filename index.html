@@ -28,11 +28,10 @@
                     </div>
 
                     <div v-for="(slide, index) in slides">
-                        <div class="reelImg inactive">
-                            <!-- <div :class = "(index == counter)?'reelImg active':'reelImg inactive'"> -->
-                            <img :src="slide.image"
-                                alt="">
-                        </div>
+
+                        <img v-bind:class="[(index == counter) ? 'active' :
+                            'inactive']" :src="slide.image"
+                            alt="">
                     </div>
                 </div>
             </div>
